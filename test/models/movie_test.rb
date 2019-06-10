@@ -1,12 +1,13 @@
-require 'test_helper'
+require './test/test_helper'
 
 class MovieTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
+  # Begin Test Block to not nil
   test "should be invalid without a title" do
-    movies(:one).name = nil
-    assert_nil movies(:one).name
+    movies(:one).title = nil
+    assert_nil movies(:one).title
     assert_equal false, movies(:one).valid?
   end
   test "should be invalid without a summary" do
@@ -24,4 +25,5 @@ class MovieTest < ActiveSupport::TestCase
     assert_nil movies(:one).category
     assert_equal false, movies(:one).valid?
   end
+  # End to not nil
 end

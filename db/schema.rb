@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20190401020114) do
   end
 
   create_table "movies", force: :cascade do |t|
-    t.string "name"
+    t.string "title"
     t.text "summary"
     t.integer "year"
     t.bigint "category_id"

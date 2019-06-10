@@ -4,5 +4,5 @@ class Movie < ApplicationRecord
 
   # Essa validação foi inserida após acusação no teste do controller
   has_many :evaluations, dependent: :delete_all
-  validates :name, :summary, :year, :category, presence: true
+  validates :title, :summary, :year, :category, presence: true
 end

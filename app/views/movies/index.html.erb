@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>title</th>
       <th>Summary</th>
       <th>Year</th>
       <th>Category</th>
@@ -16,7 +16,7 @@
   <tbody>
     <% @movies.each do |movie| %>
       <tr>
-        <td><%= movie.name %></td>
+        <td><%= movie.title %></td>
         <td><%= movie.summary %></td>
         <td><%= movie.year %></td>
         <td><%= movie.category %></td>
