@@ -11,6 +11,8 @@ Requirements:
 
 * Postgres 11
 
+* Bundler 1.17.1
+
 Steps to start activity:
 
 * Bundle install

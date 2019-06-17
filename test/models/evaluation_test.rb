@@ -16,9 +16,9 @@ class EvaluationTest < ActiveSupport::TestCase
     assert_equal false, evaluations(:one).valid?
   end
   test "should be invalid without a movie" do
-    movies(:one).movie = nil
-    assert_nil movies(:one).movie
-    assert_equal false, movies(:one).valid?
+    evaluations(:one).movie = nil
+    assert_nil evaluations(:one).movie
+    assert_equal false, evaluations(:one).valid?
   end
   # End to not nil
 end
