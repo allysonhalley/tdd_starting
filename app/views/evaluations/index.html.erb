@@ -17,7 +17,7 @@
       <tr>
         <td><%= evaluation.rating %></td>
         <td><%= evaluation.comments %></td>
-        <td><%= evaluation.movie %></td>
+        <td><%= evaluation.movie.title %></td>
         <td><%= link_to 'Show', evaluation %></td>
         <td><%= link_to 'Edit', edit_evaluation_path(evaluation) %></td>
         <td><%= link_to 'Destroy', evaluation, method: :delete, data: { confirm: 'Are you sure?' } %></td>

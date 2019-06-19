@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :category_id %>
-    <%= form.text_field :category_id, id: :movie_category_id %>
+    <%= form.select(:category_id, Category.all.collect {|c| [c.name, c.id]}, {include_blank: true}) %>
   </div>
 
   <div class="actions">
